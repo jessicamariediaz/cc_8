@@ -49,9 +49,9 @@ commentsInput.addEventListener("input", () => {
 //step 7
 
 feedbackForm.addEventListener("submit", (e) => {
-    e.preventDefault(); // prevent page reload
+    e.preventDefault(); 
 
-    // Validate inputs
+
     if (!nameInput.value || !emailInput.value || !commentsInput.value) {
         alert("All fields are required.");
         return;
@@ -63,5 +63,11 @@ const entry = document.createElement("div");
     entry.textContent = `${nameInput.value} (${emailInput.value}): ${commentsInput.value}`;
     feedbackDisplay.appendChild(entry);
 
+
+
+
+
+
+    
      feedbackForm.reset();
 });

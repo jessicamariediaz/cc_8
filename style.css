@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #d5f2f3;
   margin: 20px;
 }
 
@@ -33,7 +33,7 @@ input, textarea {
 button {
   margin-top: 15px;
   background: #0078ff;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -52,7 +52,7 @@ button:hover {
 .tooltip {
   position: absolute;
   background: black;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 5px 8px;
   border-radius: 4px;
   font-size: 12px;
@@ -60,7 +60,7 @@ button:hover {
 }
 
 .feedback-entry {
-  background: #fff;
+  background: #ffffff;
   margin: 10px auto;
   padding: 10px;
   border-radius: 8px;
