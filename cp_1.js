@@ -1,7 +1,6 @@
-
 //step 3
 const feedbackForm = document.getElementById("feedback-form");
-const nameInput = document.getElementById("name");
+const nameInput = document.getElementById("username");
 const emailInput = document.getElementById("email");
 const commentsInput = document.getElementById("comments");
 const submitBtn = document.getElementById("submitbtn");
@@ -13,7 +12,7 @@ feedbackForm.addEventListener("click", (e) => {
         console.log("Interacting with:", e.target.id);
 
 
-        e.stopPropagation();
+        e.stopPropagation(); //prevent background clicks
     }
 });
 
@@ -53,7 +52,7 @@ feedbackForm.addEventListener("submit", (e) => {
 
 
     if (!nameInput.value || !emailInput.value || !commentsInput.value) {
-        alert("All fields are required.");
+        alert("All fields are required. Go back and finish the form!");
         return;
     }
 
@@ -68,6 +67,6 @@ const entry = document.createElement("div");
 
 
 
-    
+
      feedbackForm.reset();
 });
